@@ -10,6 +10,7 @@
 // @ is an alias to /src
 // import HelloWorld from "@/components/HelloWorld.vue";
 import BlogPost from "@/components/BlogPosting.vue";
+// import Posts from "@/assets/blog/posts.json";
 
 export default {
   name: "blog",
