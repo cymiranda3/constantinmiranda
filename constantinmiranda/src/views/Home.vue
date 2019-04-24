@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <section class="company-heading intro-type" id="parallax-one">
+    <section class="company-heading" id="parallax-one">
       <div class="container">
         <div class="row product-title-info">
           <div class="col-md-12">
@@ -16,7 +16,7 @@
       <section id="education">
         <div class="container">
           <h1 class='sectionHeader'>Education</h1>
-          <LogoCard image_path="./assets/images/saas.png"/>
+          <EducationCards />
           <a class="ct-btn-scroll ct-js-btn-scroll" href="#skills"><img class="sectionArrow" alt="Arrow Down Icon" :src="require('../assets/images/down-arrow.png')"></a>
         </div>
       </section>
@@ -24,6 +24,7 @@
       <section id="skills">
         <div class="container">
           <h1 class='sectionHeader'>Skills</h1>
+          <SkillCards />
         </div>
       </section>
 
@@ -41,14 +42,16 @@
 // @ is an alias to /src
 // import HelloWorld from "@/components/HelloWorld.vue";
 import Biography from "@/components/Biography.vue";
-import LogoCard from "@/components/LogoCard.vue"
+import EducationCards from "@/components/EducationCards.vue"
+import SkillCards from "@/components/SkillCards.vue"
 import $ from 'jquery'
 
 export default {
   name: "home",
   components: {
     Biography,
-    LogoCard,
+    EducationCards,
+    SkillCards,
   },
   mounted: function() {
     $("a").on('click', function(event) {
@@ -72,7 +75,7 @@ export default {
     font-family: "Old Standard Regular";
     color: black;
     text-align: left;
-    margin-left: 40px;
+
   }
 
   .sectionWrapper {
@@ -82,7 +85,11 @@ export default {
 
   /* For scrolling */
   .intro-type .container {
-    padding: 3vw 0vw;
+    padding: 1vw 0vw;
+  }
+
+  #parallax-one {
+    height: 100vh;
   }
 
 
@@ -98,9 +105,9 @@ export default {
   }
 
   .ct-btn-scroll {
-    padding: 30px 0px;
+    padding: 10vw 0px;
     display: block;
-    width: 70vw;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     z-index: 9;
