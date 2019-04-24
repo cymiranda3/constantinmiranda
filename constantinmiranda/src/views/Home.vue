@@ -5,7 +5,7 @@
         <div class="row product-title-info">
           <div class="col-md-12">
             <Biography />
-            <a class="ct-btn-scroll ct-js-btn-scroll" href="#education"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
+            <a class="ct-btn-scroll ct-js-btn-scroll" href="#education"><img class="sectionArrow" alt="Arrow Down Icon" :src="require('../assets/images/down-arrow.png')"></a>
           </div>
         </div>
       </div>
@@ -16,7 +16,8 @@
       <section id="education">
         <div class="container">
           <h1 class='sectionHeader'>Education</h1>
-          <a class="ct-btn-scroll ct-js-btn-scroll" href="#skills"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
+          <LogoCard image_path="./assets/images/saas.png"/>
+          <a class="ct-btn-scroll ct-js-btn-scroll" href="#skills"><img class="sectionArrow" alt="Arrow Down Icon" :src="require('../assets/images/down-arrow.png')"></a>
         </div>
       </section>
 
@@ -40,12 +41,14 @@
 // @ is an alias to /src
 // import HelloWorld from "@/components/HelloWorld.vue";
 import Biography from "@/components/Biography.vue";
+import LogoCard from "@/components/LogoCard.vue"
 import $ from 'jquery'
 
 export default {
   name: "home",
   components: {
     Biography,
+    LogoCard,
   },
   mounted: function() {
     $("a").on('click', function(event) {
@@ -79,7 +82,7 @@ export default {
 
   /* For scrolling */
   .intro-type .container {
-    padding: 107px 0px 102px 0px !important;
+    padding: 3vw 0vw;
   }
 
 
@@ -95,18 +98,12 @@ export default {
   }
 
   .ct-btn-scroll {
-    color: black;
-    width: 49px;
-    height: 49px;
-    position: relative;
-    bottom: 30px;
-    left: 0;
-    right: 0;
-    top: -20px;
-    margin: auto;
-    padding-top: 500px;
+    padding: 30px 0px;
+    display: block;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 9;
-    border-radius: 50%;
     -webkit-transition: background-color 0.25s ease-in-out;
     transition: background-color 0.25s ease-in-out;
   }
@@ -119,5 +116,10 @@ export default {
   #education, #skills, #work-experience {
     height: 100vh;
     padding-top: 30px;
+  }
+
+  .sectionArrow {
+    height: 50px;
+    width: 50px;
   }
 </style>
