@@ -86,6 +86,11 @@ export default {
 .card {
   padding: 20px;
   min-height: 25vw;
+  transition: all .5s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card-body {

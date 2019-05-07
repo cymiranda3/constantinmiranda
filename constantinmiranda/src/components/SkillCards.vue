@@ -3,6 +3,7 @@
     <b-row id="row1">
       <b-col md="3">
         <b-card
+          v-on:click="showModal('git-modal')"
           title=""
           :img-src="require('@/assets/images/git.png')"
           img-alt="Image"
@@ -15,8 +16,17 @@
             Some quick example text to build on the card title and make up the bulk of the card's content.
           </b-card-text> -->
           <!-- <b-button href="#" variant="primary">Go somewhere</b-button> -->
+
         </b-card>
+
+        <b-modal id="git-modal" ref="git-modal" size="xl" scrollable title="Git">
+          <h3></h3>
+          <p class="my-4">Hello from modal!</p>
+        </b-modal>
+
       </b-col>
+
+
 
       <b-col md="3">
         <b-card
@@ -154,6 +164,9 @@ export default {
   methods:{
     getImage() {
       return '@/assets/images/saas.png'
+    },
+    showModal(id) {
+      this.$refs[id].show()
     }
   },
 };
@@ -170,6 +183,11 @@ export default {
 .card {
   padding: 20px;
   min-height: 20vw;
+  transition: all .5s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card-body {
