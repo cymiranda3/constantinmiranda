@@ -26,6 +26,18 @@ export default {
   font-family: "Old Standard Regular";
   src: url("assets/fonts/OldStandard-Regular.ttf")
 }
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("assets/fonts/Roboto-Regular.ttf")
+}
+@font-face {
+  font-family: "Roboto Thin";
+  src: url("assets/fonts/Roboto-Thin.ttf")
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("assets/fonts/Roboto-Light.ttf")
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

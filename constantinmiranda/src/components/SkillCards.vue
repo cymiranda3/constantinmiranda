@@ -19,9 +19,22 @@
 
         </b-card>
 
-        <b-modal id="git-modal" ref="git-modal" size="xl" scrollable title="Git">
-          <h3></h3>
-          <p class="my-4">Hello from modal!</p>
+        <b-modal id="git-modal" ref="git-modal" size="xl" scrollable>
+          <h3 class="modalHeader">Experience with Git</h3>
+          <h4 class="modalSubheader">Cornell's Information Science Department heavily integrates the Git workflow into coursework.</h4>
+          <b-img class="modalImage" :src="require('@/assets/images/git-staff.png')"></b-img>
+          <div class="modalText">
+            <p>Many of Cornell's courses use Github to host course repositories and individual student repositories. I've used the Git workflow both as a student, to submit my assignments in classes like INFO 2300 and 4340, and as a teaching assistant, to fetch and checkout student work for grading.</p>
+            <p>I am familiar with popular Git workflow features like commits, merging commits, and using a feature-centric branch strategy.</p>
+          </div>
+
+          <div class="relevantCourses">
+            <p class="rcHeader">Relevant Courses: </p>
+            <p class="rcItem">INFO 2300 - Intermediate Web Design & Development</p>
+            <p class="rcItem">INFO 3300 - Data Driven Web Applications</p>
+            <p class="rcItem">INFO 4340 - UX & Software Development Studio</p>
+            <p class="rcItem">INFO 4910 - Teaching in Information Science</p>
+          </div>
         </b-modal>
 
       </b-col>
@@ -202,5 +215,52 @@ export default {
 #row1 {
   align-items: center;
   align-content: center;
+}
+
+/* Modal CSS: */
+.modalHeader {
+  font-family: "Old Standard Regular";
+  font-size: 4vw;
+}
+
+.modalSubheader {
+  font-family: "Roboto Light"
+}
+
+.modalImage {
+  width: 40vw;
+  margin-top: 2vw;
+  border: 0.5px solid lightgray;
+  border-radius: 5px;
+}
+
+.modalText {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  margin-top: 2vw;
+  font-family: "Roboto Light";
+  font-size: 1.75vw;
+}
+
+.relevantCourses {
+  text-align: left;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vw;
+}
+
+.rcHeader {
+  font-family: "Old Standard Regular";
+  font-size: 2vw;
+
+  margin-bottom: 0px;
+}
+
+.rcItem {
+  font-family: "Roboto Thin";
+  font-size: 1.2vw;
 }
 </style>
