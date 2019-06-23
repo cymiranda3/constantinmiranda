@@ -31,6 +31,7 @@
       <section id="work-experience">
         <div class="container">
           <h1 class='sectionHeader'>Work Experience</h1>
+          <EmploymentCards />
         </div>
       </section>
     </div>
@@ -44,6 +45,7 @@
 import Biography from "@/components/Biography.vue";
 import EducationCards from "@/components/EducationCards.vue"
 import SkillCards from "@/components/SkillCards.vue"
+import EmploymentCards from "@/components/EmploymentCards.vue"
 import $ from 'jquery'
 
 export default {
@@ -52,6 +54,7 @@ export default {
     Biography,
     EducationCards,
     SkillCards,
+    EmploymentCards,
   },
   mounted: function() {
     $("a").on('click', function(event) {
