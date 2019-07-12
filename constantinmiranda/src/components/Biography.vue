@@ -1,9 +1,8 @@
 <template>
   <div class="bio">
-    <b-card id="bioCard" no-body class="overflow-hidden">
       <b-row no-gutters id="biographyRow">
         <b-col md="6">
-          <b-card-img id="bioCardImage" :src="require('../assets/images/snowbird.jpg')" class="rounded-0"></b-card-img>
+          <b-img id="bioImage" :src="require('../assets/images/snowbird.jpg')"></b-img>
         </b-col>
         <b-col md="6">
           <b-card-body title="Currently @ Strategic Investment Group">
@@ -13,7 +12,6 @@
           </b-card-body>
         </b-col>
       </b-row>
-    </b-card>
   </div>
 </template>
 
@@ -30,16 +28,12 @@ export default {
     margin-right: auto;
   }
 
-  #bioCard {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  #bioImage {
+    max-width: 40vw;
   }
 
   #biography {
-    font-size: 1.5vw;
-    text-align: left;
-    padding-left: 2vw;
+    font-size: 1.4vw;
   }
 
 </style>

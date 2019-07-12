@@ -5,7 +5,7 @@
         <div class="row product-title-info">
           <div class="col-md-12">
             <Biography />
-            <a class="ct-btn-scroll ct-js-btn-scroll" href="#education"><img class="sectionArrow" alt="Arrow Down Icon" :src="require('../assets/images/down-arrow.png')"></a>
+            <a class="btn-main ct-btn-scroll ct-js-btn-scroll" href="#education"><img class="sectionArrow" alt="Arrow Down Icon" :src="require('../assets/images/down-arrow.png')"></a>
           </div>
         </div>
       </div>
@@ -24,7 +24,7 @@
       <section id="skills">
         <div class="container">
           <h1 class='sectionHeader'>Skills</h1>
-          <SkillCards />
+          <SkillCards id="skillcards"/>
         </div>
       </section>
 
@@ -95,7 +95,6 @@ export default {
     height: 100vh;
   }
 
-
   .parallax {
     background-attachment: inherit !important;
     background-repeat: repeat;
@@ -105,6 +104,11 @@ export default {
     bottom: 0px;
     width: 100%;
     z-index: -10;
+  }
+
+  .btn-main {
+    position: absolute;
+    bottom: -200px;
   }
 
   .ct-btn-scroll {
@@ -132,4 +136,24 @@ export default {
     height: 50px;
     width: 50px;
   }
+
+  @media (min-device-width : 320px) and (max-device-width : 480px) {
+    .sectionHeader {
+      font-size: 10vw;
+      margin-left: 1vw;
+    }
+
+    #skills {
+      height: 60vh;
+    }
+
+    #education {
+      height: 140vh;
+    }
+
+    #skillcards {
+      margin-top: 10vw;
+    }
+
+}
 </style>

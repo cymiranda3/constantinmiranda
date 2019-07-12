@@ -1,5 +1,5 @@
 <template>
-  <div class="educationcards">
+  <div class="employmentcards">
     <b-row id="row1">
       <b-col md="4">
         <b-card
@@ -14,12 +14,12 @@
           >
         </b-card>
 
-        <b-modal id="sultana-modal" ref="sultana-modal" size="xl" scrollable>
+        <b-modal id="sultana-modal" ref="sultana-modal" size="xl" scrollable ok-only ok-variant="primary" ok-title="Close">
           <h3 class="modalHeader">Sultana Education Foundation</h3>
           <h4 class="modalSubheader">Summers 2016 & 2017</h4>
           <b-img class="modalImage" :src="require('@/assets/images/teaching.jpg')"></b-img>
           <div class="modalText">
-            <p>For summers 2016 and 2017, I worked as a Paddling Staff Member for the Sultana Education Foundation. Sultana is a nonprofit organization in Chestertown, MD (Maryland's Eastern Shore). Their focus is "Preservation Through Education" and seek to ensure the future protection and preservation of the Chesapeake Bay by educating students about the diverse flora and fauna.</p>
+            <p>For summers 2016 and 2017, I worked as a Paddling Staff Member for the Sultana Education Foundation. Sultana is a nonprofit organization in Chestertown, MD (Maryland's Eastern Shore). Their focus is "Preservation Through Education" and the foundation seeks to ensure the future protection and preservation of the Chesapeake Bay by educating students about the diverse flora and fauna.</p>
             <p>During my time at Sultana, I was responsible for the well-being, education, and leadership of 15-20 students. The program included both day and overnight excursions. I was certified as an American Red Cross Lifeguard and in CPR/AED.</p>
           </div>
 
@@ -51,7 +51,7 @@
           <!-- <b-button href="#" variant="primary">Go somewhere</b-button> -->
         </b-card>
 
-        <b-modal id="ff-modal" ref="ff-modal" size="xl" scrollable>
+        <b-modal id="ff-modal" ref="ff-modal" size="xl" scrollable ok-only ok-variant="primary" ok-title="Close">
           <h3 class="modalHeader">Farther Farms</h3>
           <h4 class="modalSubheader">Summer 2018</h4>
           <b-img class="modalImage" :src="require('@/assets/images/ff-website.jpg')"></b-img>
@@ -69,7 +69,7 @@
                 <li>Taste testing.</li>
               </ul>
             </p>
-            <p>Farther Farms has been one of my favorite experiences to date. I had the opportunity to pitch in on a wide variety of projects and apply my skills where I was most needed. The small team setting meant that I worked directly with the CEO, CTO, and VP of Business Development on a daily basis.</p>
+            <p>At Farther Farms, I had the opportunity to pitch in on a wide variety of projects and apply my skills where I was most needed. The small team setting meant that I worked directly with the CEO, CTO, and VP of Business Development on a daily basis.</p>
           </div>
         </b-modal>
       </b-col>
@@ -91,7 +91,7 @@
           <!-- <b-button href="#" variant="primary">Go somewhere</b-button> -->
         </b-card>
 
-        <b-modal id="strategic-modal" ref="strategic-modal" size="xl" scrollable>
+        <b-modal id="strategic-modal" ref="strategic-modal" size="xl" scrollable ok-only ok-variant="primary" ok-title="Close">
           <h3 class="modalHeader">Strategic Investment Group</h3>
           <h4 class="modalSubheader">Summer 2019</h4>
           <b-img class="modalImage" :src="require('@/assets/images/strategic-interior.jpg')"></b-img>
@@ -141,20 +141,31 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.educationcards {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+.employmentcards {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
-
 .card {
+  /*float: left;*/
+  background-color: transparent;
+  width: 20vw;
+  height: 20vw;
   padding: 20px;
-  min-height: 25vw;
-  transition: all .5s ease-in-out;
+  margin: 10px;
+  flex-basis: 20%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  transition: all .4s ease-in-out;
+  border: none;
 }
 
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-body {
@@ -166,11 +177,7 @@ export default {
   margin-bottom: auto;
 }
 
-#row1 {
-  align-items: center;
-  align-content: center;
-}
-
+/* Modal CSS: */
 .modalHeader {
   font-family: "Old Standard Regular";
   font-size: 4vw;
@@ -222,5 +229,18 @@ li {
 .rcItem {
   font-family: "Roboto Thin";
   font-size: 1.2vw;
+}
+
+/* Mobile Styles: */
+@media (min-device-width : 320px) and (max-device-width : 480px) {
+  .card {
+    width: 80vw;
+    height: 80vw;
+    border: 1px solid lightgray;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    flex-basis: 80%;
+  }
 }
 </style>
