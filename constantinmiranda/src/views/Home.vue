@@ -5,7 +5,7 @@
         <div class="row product-title-info">
           <div class="col-md-12">
             <Biography />
-            <a class="btn-main ct-btn-scroll ct-js-btn-scroll" href="#education"><img class="sectionArrow" alt="Arrow Down Icon" :src="require('../assets/images/down-arrow.png')"></a>
+            <!-- <a class="btn-main ct-btn-scroll ct-js-btn-scroll" href="#education"><img class="sectionArrow" alt="Arrow Down Icon" :src="require('../assets/images/down-arrow.png')"></a> -->
           </div>
         </div>
       </div>
@@ -17,7 +17,7 @@
         <div class="container">
           <h1 class='sectionHeader'>Education</h1>
           <EducationCards />
-          <a class="ct-btn-scroll ct-js-btn-scroll" href="#skills"><img class="sectionArrow" alt="Arrow Down Icon" :src="require('../assets/images/down-arrow.png')"></a>
+          <!-- <a class="ct-btn-scroll ct-js-btn-scroll" href="#skills"><img class="sectionArrow" alt="Arrow Down Icon" :src="require('../assets/images/down-arrow.png')"></a> -->
         </div>
       </section>
 
@@ -145,10 +145,14 @@ export default {
 
     #skills {
       height: 60vh;
+      display: block;
     }
 
     #education {
-      height: 140vh;
+      height: 160vh;
+      margin-bottom: 8vh;
+      margin-top: 10vh;
+      display: block;
     }
 
     #skillcards {

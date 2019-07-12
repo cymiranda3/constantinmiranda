@@ -36,4 +36,14 @@ export default {
     font-size: 1.4vw;
   }
 
+  @media (min-device-width : 320px) and (max-device-width : 480px) {
+    #bioImage {
+      max-width: 70vw;
+    }
+
+    #biography {
+      font-size: 4vw;
+    }
+  }
+
 </style>
