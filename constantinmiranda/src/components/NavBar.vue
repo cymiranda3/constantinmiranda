@@ -2,8 +2,8 @@
   <div class="navbar">
     <b-nav pills>
       <b-nav-item exact to="/">Resume</b-nav-item>
-      <b-nav-item exact to="blog">Blog</b-nav-item>
-      <b-nav-item>Contact</b-nav-item>
+      <b-nav-item disabled exact to="blog" v-b-tooltip.hover title="under construction...">Blog</b-nav-item>
+      <b-nav-item exact to="/contact">Contact</b-nav-item>
     </b-nav>
   </div>
 </template>
@@ -27,6 +27,12 @@ export default {
 #nav a.router-link-active {
   background-color: #eb2f06;
   color: white;
+  margin-right: 10px;
+}
+
+#nav a.nav-link.disabled {
+  color: black;
+  opacity: 0.2;
 }
 
 </style>

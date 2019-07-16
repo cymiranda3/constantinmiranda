@@ -245,6 +245,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .skillcards {
+  margin-top: 5%;
   align-items: stretch;
   display: flex;
   flex-direction: row;

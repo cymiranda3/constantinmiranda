@@ -10,11 +10,13 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.18",
+    "clipboard": "^2.0.4",
     "core-js": "^2.6.5",
     "jQuery": "^1.7.4",
     "jquery": "^3.4.1",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
+    "vue-clipboard2": "^0.3.0",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },

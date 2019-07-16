@@ -35,7 +35,7 @@
         </div>
       </section>
     </div>
-
+    <Footer />
   </div>
 </template>
 
@@ -46,6 +46,7 @@ import Biography from "@/components/Biography.vue";
 import EducationCards from "@/components/EducationCards.vue"
 import SkillCards from "@/components/SkillCards.vue"
 import EmploymentCards from "@/components/EmploymentCards.vue"
+import Footer from "@/components/Footer.vue"
 import $ from 'jquery'
 
 export default {
@@ -55,6 +56,7 @@ export default {
     EducationCards,
     SkillCards,
     EmploymentCards,
+    Footer
   },
   mounted: function() {
     $("a").on('click', function(event) {
@@ -92,7 +94,8 @@ export default {
   }
 
   #parallax-one {
-    height: 100vh;
+    display: block;
+    margin-bottom: 10%;
   }
 
   .parallax {
@@ -128,7 +131,7 @@ export default {
   }
 
   #education, #skills, #work-experience {
-    height: 100vh;
+    height: 40vw;
     padding-top: 30px;
   }
 

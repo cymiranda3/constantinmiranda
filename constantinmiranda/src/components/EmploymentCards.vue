@@ -142,6 +142,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .employmentcards {
+  margin-top: 5%;
+  justify-content: space-around;
   align-items: stretch;
   display: flex;
   flex-direction: row;

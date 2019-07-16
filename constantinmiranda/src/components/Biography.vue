@@ -26,13 +26,18 @@ export default {
   .bio {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 8%;
   }
 
   #bioImage {
-    max-width: 40vw;
+    display: inline-block;
+    max-width: 38vw;
+    padding-right: 5vw;
   }
 
   #biography {
+    display: inline-block;
+    max-width: 38vw;
     font-size: 1.4vw;
   }
 
