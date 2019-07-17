@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>Send me an email at </h1>
-    <b-button variant="primary" v-clipboard:copy="thingToCopy" v-on:click="copySuccess=true">
+    <b-button  class="bounce" variant="primary" v-clipboard:copy="thingToCopy" v-on:click="copySuccess=true">
       cym8@cornell.edu <b-badge v-if="copySuccess" variant="light">Copied!</b-badge>
     </b-button>
   </div>
@@ -38,12 +38,14 @@ export default {
   button {
     /* background-color: transparent; */
     /* color: black; */
-    font-family: "Roboto Thin";
+    font-family: "Roboto Light";
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 4vw;
     font-size: 3vw;
+    -webkit-animation: bounce .7s 2;
   }
 
   span.badge {
@@ -51,10 +53,48 @@ export default {
     top: -.3vw;
   }
 
-  /* button:hover {
-    background-color: black;
-    color: white;
-  } */
+  @-webkit-keyframes bounce {
+          0% {
+      transform: scale(1,1) translate(0px, 0px);
+    }
+
+    30%{
+      transform: scale(1,0.8) translate(0px, 15px);
+    }
+
+    75%{
+      transform: scale(1,1.1) translate(0px, -15px);
+    }
+
+   100% {
+      transform: scale(1,1) translate(0px, 0px);
+    }
+  }
+
+  /* .bounce {
+      margin-top:100px;
+      height:20px;
+      width:150px;
+      padding:20px;
+      background:tomato;
+
+   } */
+
+  @media (min-device-width : 320px) and (max-device-width : 480px) {
+    button {
+      font-size: 5vw;
+      height: 70px;
+      width: 70vw;
+    }
+
+    span.badge {
+      border-radius: 4px;
+      font-size: 5vw;
+      top: -.15vw;
+      vertical-align: middle;
+      padding: 10px 5px;
+    }
+  }
 
 
 </style>

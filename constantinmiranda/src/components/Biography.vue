@@ -32,13 +32,13 @@ export default {
   #bioImage {
     display: inline-block;
     max-width: 38vw;
-    padding-right: 5vw;
   }
 
   #biography {
     display: inline-block;
     max-width: 38vw;
     font-size: 1.4vw;
+    padding-left: 3vw;
   }
 
   @media (min-device-width : 320px) and (max-device-width : 480px) {
@@ -48,6 +48,8 @@ export default {
 
     #biography {
       font-size: 4vw;
+      max-width: 70vw;
+      padding-left: 0;
     }
   }
 
