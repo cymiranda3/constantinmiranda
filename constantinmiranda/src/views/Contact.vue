@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>Send me an email at </h1>
+    <h1>shoot me an email at</h1>
     <b-button  class="bounce" variant="primary" v-clipboard:copy="thingToCopy" v-on:click="copySuccess=true">
       cym8@cornell.edu <b-badge v-if="copySuccess" variant="light">Copied!</b-badge>
     </b-button>
@@ -33,7 +33,8 @@ export default {
   }
   h1 {
     margin: 0;
-    font-family: "Old Standard Regular";
+    font-family: "Roboto Thin";
+    font-size: 4vw;
   }
   button {
     /* background-color: transparent; */
@@ -70,15 +71,6 @@ export default {
       transform: scale(1,1) translate(0px, 0px);
     }
   }
-
-  /* .bounce {
-      margin-top:100px;
-      height:20px;
-      width:150px;
-      padding:20px;
-      background:tomato;
-
-   } */
 
   @media (min-device-width : 320px) and (max-device-width : 480px) {
     button {

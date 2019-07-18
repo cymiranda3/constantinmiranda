@@ -15,21 +15,15 @@
         </b-card>
 
         <b-modal id="sultana-modal" ref="sultana-modal" size="xl" scrollable ok-only ok-variant="primary" ok-title="Close">
-          <h3 class="modalHeader">Sultana Education Foundation</h3>
-          <h4 class="modalSubheader">Summers 2016 & 2017</h4>
-          <b-img class="modalImage" :src="require('@/assets/images/teaching.jpg')"></b-img>
-          <div class="modalText">
-            <p>For summers 2016 and 2017, I worked as a Paddling Staff Member for the Sultana Education Foundation. Sultana is a nonprofit organization in Chestertown, MD (Maryland's Eastern Shore). Their focus is "Preservation Through Education" and the foundation seeks to ensure the future protection and preservation of the Chesapeake Bay by educating students about the diverse flora and fauna.</p>
-            <p>During my time at Sultana, I was responsible for the well-being, education, and leadership of 15-20 students. The program included both day and overnight excursions. I was certified as an American Red Cross Lifeguard and in CPR/AED.</p>
+          <div class="modalBody">
+            <h3 class="modalHeader">Sultana Education Foundation</h3>
+            <h4 class="modalSubheader">Summers 2016 & 2017</h4>
+            <b-img class="modalImage" :src="require('@/assets/images/teaching.jpg')"></b-img>
+            <div class="modalText">
+              <p>For summers 2016 and 2017, I worked as a Paddling Staff Member for the Sultana Education Foundation. Sultana is a nonprofit organization in Chestertown, MD (Maryland's Eastern Shore). Their focus is "Preservation Through Education" and the foundation seeks to ensure the future protection and preservation of the Chesapeake Bay by educating students about the diverse flora and fauna.</p>
+              <p>During my time at Sultana, I was responsible for the well-being, education, and leadership of 15-20 students. The program included both day and overnight excursions. I was certified as an American Red Cross Lifeguard and in CPR/AED.</p>
+            </div>
           </div>
-
-          <!-- <div class="relevantCourses">
-            <p class="rcHeader">Relevant Courses: </p>
-            <p class="rcItem">INFO 2300 - Intermediate Web Design & Development</p>
-            <p class="rcItem">INFO 3300 - Data Driven Web Applications</p>
-            <p class="rcItem">INFO 4340 - UX & Software Development Studio</p>
-            <p class="rcItem">INFO 4910 - Teaching in Information Science</p>
-          </div> -->
         </b-modal>
       </b-col>
 
@@ -52,24 +46,26 @@
         </b-card>
 
         <b-modal id="ff-modal" ref="ff-modal" size="xl" scrollable ok-only ok-variant="primary" ok-title="Close">
-          <h3 class="modalHeader">Farther Farms</h3>
-          <h4 class="modalSubheader">Summer 2018</h4>
-          <b-img class="modalImage" :src="require('@/assets/images/ff-website.jpg')"></b-img>
-          <div class="modalText">
-            <p>During Summer 2018, I worked as a Business Development Intern for Farther Farms, a startup out of Cornell's entrepreneurship program. Farther Farms is working on creating the "never frozen french fry". Some of my duties included:<p>
-            <p>
-              <ul>
-                <li>Creating a weekly report on industry news and findings.</li>
-                <li>Researching prospective sales opportunities.</li>
-                <li>Researching and presenting on trends in the food industry.</li>
-                <li>Researching and analyzing industry patent holdings.</li>
-                <li>Participating in diligence meetings with prospective investors.</li>
-                <li>Building out website functionality, such as their email capture form (live on <a href="http://www.fartherfarms.com/">their website).</a></li>
-                <li>Processing potatos for test production runs.</li>
-                <li>Taste testing.</li>
-              </ul>
-            </p>
-            <p>At Farther Farms, I had the opportunity to pitch in on a wide variety of projects and apply my skills where I was most needed. The small team setting meant that I worked directly with the CEO, CTO, and VP of Business Development on a daily basis.</p>
+          <div class="modalBody">
+            <h3 class="modalHeader">Farther Farms</h3>
+            <h4 class="modalSubheader">Summer 2018</h4>
+            <b-img class="modalImage" :src="require('@/assets/images/ff-website.jpg')"></b-img>
+            <div class="modalText">
+              <p>During Summer 2018, I worked as a Business Development Intern for Farther Farms, a startup out of Cornell's entrepreneurship program. Farther Farms is working on creating the "never frozen french fry". Some of my duties included:<p>
+              <p>
+                <ul>
+                  <li>Creating a weekly report on industry news and findings.</li>
+                  <li>Researching prospective sales opportunities.</li>
+                  <li>Researching and presenting on trends in the food industry.</li>
+                  <li>Researching and analyzing industry patent holdings.</li>
+                  <li>Participating in diligence meetings with prospective investors.</li>
+                  <li>Building out website functionality, such as their email capture form (live on <a href="http://www.fartherfarms.com/">their website).</a></li>
+                  <li>Processing potatos for test production runs.</li>
+                  <li>Taste testing.</li>
+                </ul>
+              </p>
+              <p>At Farther Farms, I had the opportunity to pitch in on a wide variety of projects and apply my skills where I was most needed. The small team setting meant that I worked directly with the CEO, CTO, and VP of Business Development on a daily basis.</p>
+            </div>
           </div>
         </b-modal>
       </b-col>
@@ -92,22 +88,16 @@
         </b-card>
 
         <b-modal id="strategic-modal" ref="strategic-modal" size="xl" scrollable ok-only ok-variant="primary" ok-title="Close">
-          <h3 class="modalHeader">Strategic Investment Group</h3>
-          <h4 class="modalSubheader">Summer 2019</h4>
-          <b-img class="modalImage" :src="require('@/assets/images/strategic-interior.jpg')"></b-img>
-          <div class="modalText">
-            <p>I am currently completing an internship with Strategic Investment Group, based in Rosslyn, VA. I have been placed on the Fixed Income team, but will rotate through each asset class over the first 5 weeks. During the final five weeks, I will be preparing a final project to present to the entire company at the conclusion of the 10-week program.</p>
-            <p>Strategic is one of the leading OCIO firms in the country. They manage $37 Billion from a wide array of clients.</p>
-            <p>This page will be updated at the conclusion of the program.</p>
+          <div class="modalBody">
+            <h3 class="modalHeader">Strategic Investment Group</h3>
+            <h4 class="modalSubheader">Summer 2019</h4>
+            <b-img class="modalImage" :src="require('@/assets/images/strategic-interior.jpg')"></b-img>
+            <div class="modalText">
+              <p>I am currently completing an internship with Strategic Investment Group, based in Rosslyn, VA. I have been placed on the Fixed Income team, but will rotate through each asset class over the first 5 weeks. During the final five weeks, I will be preparing a final project to present to the entire company at the conclusion of the 10-week program.</p>
+              <p>Strategic is one of the leading OCIO firms in the country. They manage $37 Billion from a wide array of clients.</p>
+              <p>This page will be updated at the conclusion of the program.</p>
+            </div>
           </div>
-
-          <!-- <div class="relevantCourses">
-            <p class="rcHeader">Relevant Courses: </p>
-            <p class="rcItem">INFO 2300 - Intermediate Web Design & Development</p>
-            <p class="rcItem">INFO 3300 - Data Driven Web Applications</p>
-            <p class="rcItem">INFO 4340 - UX & Software Development Studio</p>
-            <p class="rcItem">INFO 4910 - Teaching in Information Science</p>
-          </div> -->
         </b-modal>
       </b-col>
 
@@ -189,7 +179,14 @@ export default {
   font-family: "Roboto Light"
 }
 
+.modalBody {
+  text-align: center;
+}
+
 .modalImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 40vw;
   margin-top: 2vw;
 }
@@ -243,6 +240,42 @@ li {
     margin-right: auto;
     padding: 50px;
     flex-basis: 80%;
+  }
+
+  .modalHeader {
+    font-size: 12vw;
+  }
+
+  .modalText {
+    margin-top: 30px;
+    font-size: 4vw;
+  }
+
+  .modalImage {
+    width: 80vw;
+  }
+
+  ul {
+    width: 95%;
+    margin-left: 0;
+    margin-right: 5%;
+  }
+
+  li {
+    font-size: 3vw;
+    padding-left: 0;
+  }
+
+  .relevantCourses {
+    width: 80%;
+  }
+
+  .rcHeader {
+    font-size: 6vw;
+  }
+
+  .rcItem {
+    font-size: 4vw;
   }
 }
 </style>

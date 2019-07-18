@@ -14,7 +14,7 @@
 
     <div class="main">
       <section id="education">
-        <div class="container">
+        <div class="container information">
           <h1 class='sectionHeader'>Education</h1>
           <EducationCards />
           <!-- <a class="ct-btn-scroll ct-js-btn-scroll" href="#skills"><img class="sectionArrow" alt="Arrow Down Icon" :src="require('../assets/images/down-arrow.png')"></a> -->
@@ -22,20 +22,24 @@
       </section>
 
       <section id="skills">
-        <div class="container">
+        <div class="container information">
           <h1 class='sectionHeader'>Skills</h1>
           <SkillCards id="skillcards"/>
         </div>
       </section>
 
       <section id="work-experience">
-        <div class="container">
+        <div class="container information">
           <h1 class='sectionHeader'>Work Experience</h1>
           <EmploymentCards />
         </div>
       </section>
+      <section>
+        <Footer />
+      </section>
+
     </div>
-    <Footer />
+
   </div>
 </template>
 
@@ -85,44 +89,7 @@ export default {
 
   .sectionWrapper {
     margin-top: 3vw;
-    margin-bottom: 18vh;
-  }
-
-  /* For scrolling */
-  .intro-type .container {
-    padding: 1vw 0vw;
-  }
-
-  #parallax-one {
-    display: block;
-    margin-bottom: 10%;
-  }
-
-  .parallax {
-    background-attachment: inherit !important;
-    background-repeat: repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    width: 100%;
-    z-index: -10;
-  }
-
-  .btn-main {
-    position: absolute;
-    bottom: -200px;
-  }
-
-  .ct-btn-scroll {
-    padding: 10vw 0px;
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 9;
-    -webkit-transition: background-color 0.25s ease-in-out;
-    transition: background-color 0.25s ease-in-out;
+    /* margin-bottom: 18vh; */
   }
 
   img,
@@ -135,31 +102,41 @@ export default {
     padding-top: 30px;
   }
 
-  .sectionArrow {
-    height: 50px;
-    width: 50px;
-  }
-
   @media (min-device-width : 320px) and (max-device-width : 480px) {
+    .main {
+      height: 100%;
+    }
     .sectionHeader {
       font-size: 10vw;
       margin-left: 1vw;
     }
 
     #skills {
-      height: 60vh;
+      height: auto;
+      display: block;
+    }
+
+    #work-experience {
+      height: auto;
+      display: block;
+    }
+
+    .information {
       display: block;
     }
 
     #education {
-      height: 160vh;
-      margin-bottom: 8vh;
-      margin-top: 10vh;
+      height: auto;
       display: block;
     }
 
     #skillcards {
       margin-top: 10vw;
+    }
+
+    Footer {
+      display: block;
+      padding-top: 10vw;
     }
 
 }
