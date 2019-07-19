@@ -281,6 +281,9 @@ li {
 
 /* Mobile Styles: */
 @media (min-device-width: 320px) and (max-device-width: 480px) {
+  .employmentcards {
+    display: inline-block;
+  }
   .card {
     width: 80vw;
     height: 80vw;

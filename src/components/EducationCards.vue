@@ -249,7 +249,6 @@ export default {
   justify-content: space-around;
   align-items: stretch;
   display: flex;
-  align-items: stretch;
   flex-direction: row;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -347,6 +346,10 @@ li {
 
 /* Mobile Styles: */
 @media (min-device-width: 320px) and (max-device-width: 480px) {
+  .educationcards {
+    display: inline-block;
+  }
+
   .card {
     width: 80vw;
     height: 80vw;
