@@ -16,8 +16,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .footer {
-    padding-top: 10vw;
-  }
-
+.footer {
+  padding-top: 10vw;
+}
 </style>

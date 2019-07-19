@@ -12,7 +12,7 @@ import NavBar from "@/components/NavBar.vue";
 
 export default {
   components: {
-    NavBar,
+    NavBar
   }
 };
 </script>
@@ -20,19 +20,19 @@ export default {
 <style>
 @font-face {
   font-family: "Old Standard Regular";
-  src: url("assets/fonts/OldStandard-Regular.ttf")
+  src: url("assets/fonts/OldStandard-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto Regular";
-  src: url("assets/fonts/Roboto-Regular.ttf")
+  src: url("assets/fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto Thin";
-  src: url("assets/fonts/Roboto-Thin.ttf")
+  src: url("assets/fonts/Roboto-Thin.ttf");
 }
 @font-face {
   font-family: "Roboto Light";
-  src: url("assets/fonts/Roboto-Light.ttf")
+  src: url("assets/fonts/Roboto-Light.ttf");
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -49,5 +49,4 @@ export default {
   font-weight: bold;
   color: #2c3e50;
 }
-
 </style>
