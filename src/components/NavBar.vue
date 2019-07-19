@@ -1,10 +1,5 @@
 <template>
   <div class="navbar">
-    <!-- <b-nav pills align="center">
-      <b-nav-item exact to="/">Resume</b-nav-item>
-      <b-nav-item disabled exact to="blog" v-b-tooltip.hover title="under construction...">Blog</b-nav-item>
-      <b-nav-item exact to="/contact">Contact</b-nav-item>
-    </b-nav> -->
 
     <b-nav pills align="center">
       <b-nav-item exact to="/">Resume</b-nav-item>
@@ -38,7 +33,7 @@ export default {
 }
 
 .navbar a {
-  font-family: "Roboto";
+  font-family: "Roboto Thin";
   font-weight: lighter;
   color: black;
 }
