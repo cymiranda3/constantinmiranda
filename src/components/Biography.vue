@@ -13,7 +13,7 @@
           title="Currently @ Strategic Investment Group"
         >
           <b-card-text id="biography">
-            Currently a Junior at Cornell pursuing Information Science
+            Currently a Senior at Cornell pursuing Information Science
             (Concentration: UX) and a Business minor. I'm interested in both the
             financial and technology industries. I have experience writing and
             working with a variety of backend (Flask - Python, Django - Python,

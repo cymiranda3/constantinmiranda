@@ -76,38 +76,12 @@
           :src="require('@/assets/images/ff-website.jpg')"
         ></b-img>
         <div class="modalText">
-          <p>
-            During Summer 2018, I worked as a Business Development Intern for
-            Farther Farms, a startup out of Cornell's entrepreneurship program.
-            Farther Farms is working on creating the "never frozen french fry".
-            Some of my duties included:
-          </p>
-          <div>
-            <ul>
-              <li>Creating a weekly report on industry news and findings.</li>
-              <li>Researching prospective sales opportunities.</li>
-              <li>
-                Researching and presenting on trends in the food industry.
-              </li>
-              <li>Researching and analyzing industry patent holdings.</li>
-              <li>
-                Participating in diligence meetings with prospective investors.
-              </li>
-              <li>
-                Building out website functionality, such as their email capture
-                form (live on
-                <a href="http://www.fartherfarms.com/">their website).</a>
-              </li>
-              <li>Processing potatos for test production runs.</li>
-              <li>Taste testing.</li>
-            </ul>
-          </div>
-          <p>
-            At Farther Farms, I had the opportunity to pitch in on a wide
-            variety of projects and apply my skills where I was most needed. The
-            small team setting meant that I worked directly with the CEO, CTO,
-            and VP of Business Development on a daily basis.
-          </p>
+          <p>Farther Farms is a Cornell startup working on commercializing a novel food-preservation technology developed in Cornell University’s Department of Food Science.</p>
+
+          <p>Duties included assisting in the company’s fundraising and diligence round, researching and 	compiling prior art for patent filings, building out website functionality for improved marketing strategies, and securing letters-of-intent from potential clients.</p>
+
+          <p>Contract Work: Intellectual Property Research (January - March 2019): Web-scraped patent filing data and 	conducted analysis based on firm, geographic area, and filing type.</p>
+
         </div>
       </div>
     </b-modal>
@@ -141,19 +115,11 @@
           :src="require('@/assets/images/strategic-interior.jpg')"
         ></b-img>
         <div class="modalText">
-          <p>
-            I am currently completing an internship with Strategic Investment
-            Group, based in Rosslyn, VA. I have been placed on the Fixed Income
-            team, but will rotate through each asset class over the first 5
-            weeks. During the final five weeks, I will be preparing a final
-            project to present to the entire company at the conclusion of the
-            10-week program.
-          </p>
-          <p>
-            Strategic is one of the leading OCIO firms in the country. They
-            manage $37 Billion from a wide array of clients.
-          </p>
-          <p>This page will be updated at the conclusion of the program.</p>
+          <p>Strategic Investment Group (SIG) is a pioneer in the outsourced chief investment office (OCIO) industry with $37 Billion in assets under management.</p>
+
+          <p>The first five weeks consisted of a rotation through each of SIG’s asset class teams.The following five weeks focused on research and preparation for a final presentation to the firm. Opportunities included attending manager meetings, reviewing manager decks, finalizing client reporting materials, and spreadsheet modeling.</p>
+
+          <p>Final Project & Presentation to the Firm: Evaluated SIG’s competitive position in the current OCIO landscape and identified future growth opportunities using both quantitative and qualitative data sources.</p>
         </div>
       </div>
     </b-modal>
